@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FracAppz Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for FracAppz" />
+  <style>
+    :root {
+      --bg: #f5f5f7;
+      --card: #ffffff;
+      --text: #111111;
+      --muted: #6e6e73;
+      --line: #e5e5ea;
+      --accent: #007aff;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      line-height: 1.1;
+      margin: 0 0 12px;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      margin: 36px 0 14px;
+      color: var(--muted);
+    }
+
+    p {
+      margin: 0 0 16px;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 22px;
+      padding: 8px 20px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+      overflow: hidden;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .row:last-child {
+      border-bottom: none;
+    }
+
+    .label {
+      font-size: 1.05rem;
+      color: var(--text);
+    }
+
+    .value {
+      font-size: 1.05rem;
+      color: var(--muted);
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .note-card {
+      background: var(--card);
+      border-radius: 22px;
+      padding: 20px;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+    }
+
+    .note-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin: 0 0 8px;
+      color: var(--text);
+    }
+
+    .footer {
+      margin-top: 28px;
+      font-size: 0.98rem;
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 640px) {
+      .row {
+        flex-direction: column;
+        gap: 6px;
+      }
+
+      .value {
+        text-align: left;
+        white-space: normal;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <h1>Privacy Policy</h1>
+    <p><strong>FracAppz</strong> is designed to respect your privacy. It works entirely offline and does not collect, transmit, or share any personal information.</p>
+
+    <h2>Data Collection</h2>
+    <section class="card" aria-label="Data Collection">
+      <div class="row">
+        <div class="label">Data Collected</div>
+        <div class="value">None</div>
+      </div>
+      <div class="row">
+        <div class="label">Tracking</div>
+        <div class="value">None</div>
+      </div>
+      <div class="row">
+        <div class="label">Internet Connection</div>
+        <div class="value">Not Required</div>
+      </div>
+      <div class="row">
+        <div class="label">Account Required</div>
+        <div class="value">No</div>
+      </div>
+    </section>
+
+    <h2>Stored On Device</h2>
+    <section class="card" aria-label="Stored On Device">
+      <div class="row">
+        <div class="label">Proppant &amp; Casing Libraries</div>
+        <div class="value">Local only</div>
+      </div>
+      <div class="row">
+        <div class="label">Tank Strapping Tables</div>
+        <div class="value">Local only</div>
+      </div>
+      <div class="row">
+        <div class="label">App Preferences</div>
+        <div class="value">Local only</div>
+      </div>
+    </section>
+
+    <h2>System APIs Used</h2>
+    <section class="note-card" aria-label="System APIs Used">
+      <div class="note-title">UserDefaults</div>
+      <p>Used only to record whether the one-time data migration has completed on first launch. No personal data is stored.</p>
+    </section>
+
+    <h2>Developer</h2>
+    <section class="card" aria-label="Developer">
+      <div class="row">
+        <div class="label">Omar A Omar - Houston, Texas</div>
+        <div class="value"></div>
+      </div>
+    </section>
+
+    <h2>Contact</h2>
+    <section class="note-card" aria-label="Contact">
+      <p>For privacy questions about FracAppz, contact: <a href="mailto:youremail@example.com">omar.omar@aspelta.io</a></p>
+    </section>
+
+    <p class="footer">
+      Effective date: March 15, 2026
+    </p>
+  </main>
+</body>
+</html>
