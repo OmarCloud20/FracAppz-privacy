@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FracAppz</title>
+  <meta name="description" content="FracAppz is a field-ready engineering calculator and offline reference tool for hydraulic fracturing operations." />
+  <style>
+    :root {
+      --bg: #f5f5f7;
+      --card: #ffffff;
+      --text: #111111;
+      --muted: #6e6e73;
+      --line: #e5e5ea;
+      --accent: #007aff;
+      --shadow: 0 1px 2px rgba(0,0,0,0.03);
+      --radius: 22px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 24px;
+      align-items: center;
+      margin-bottom: 28px;
+    }
+
+    .app-icon {
+      width: 120px;
+      height: 120px;
+      border-radius: 28px;
+      object-fit: cover;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.12);
+      background: #111;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      line-height: 1.05;
+      margin: 0 0 8px;
+      letter-spacing: -0.02em;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.1rem;
+      max-width: 700px;
+    }
+
+    .card,
+    .feature-grid article,
+    .cta-card {
+      background: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+    }
+
+    .intro-card,
+    .cta-card,
+    .feature-grid article,
+    .info-card {
+      padding: 22px 24px;
+    }
+
+    h2 {
+      font-size: 1.45rem;
+      margin: 34px 0 14px;
+      color: var(--muted);
+    }
+
+    p {
+      margin: 0 0 14px;
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .intro-card p:last-child,
+    .cta-card p:last-child,
+    .info-card p:last-child,
+    .feature-grid p:last-child {
+      margin-bottom: 0;
+    }
+
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .feature-grid h3,
+    .info-card h3 {
+      margin: 0 0 8px;
+      font-size: 1.15rem;
+      color: var(--text);
+    }
+
+    .info-list {
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 8px 22px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .row:last-child {
+      border-bottom: none;
+    }
+
+    .label {
+      color: var(--text);
+      font-size: 1.05rem;
+    }
+
+    .value {
+      color: var(--muted);
+      font-size: 1.05rem;
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.98rem;
+    }
+
+    .button.secondary {
+      background: #e9eefc;
+      color: #1457d6;
+    }
+
+    .footer {
+      margin-top: 34px;
+      color: var(--muted);
+      font-size: 0.98rem;
+    }
+
+    @media (max-width: 720px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .app-icon {
+        margin: 0 auto;
+      }
+
+      .feature-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .row {
+        flex-direction: column;
+        gap: 6px;
+      }
+
+      .value {
+        text-align: left;
+        white-space: normal;
+      }
+
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      .links {
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <img src="app-icon.png" alt="FracAppz App Icon" class="app-icon" />
+      <div>
+        <h1>FracAppz</h1>
+        <p class="subtitle">
+          A field-ready engineering calculator and offline reference tool built for hydraulic fracturing operations.
+        </p>
+      </div>
+    </section>
+
+    <section class="intro-card card">
+      <p>
+        FracAppz is designed for quick access to essential calculations and operational reference data in the field.
+        The app works entirely offline, keeps data on the device, and is built for speed and simplicity.
+      </p>
+      <div class="links">
+        <a class="button" href="support.html">Support</a>
+        <a class="button secondary" href="privacy.html">Privacy Policy</a>
+      </div>
+    </section>
+
+    <h2>Core Features</h2>
+    <section class="feature-grid">
+      <article>
+        <h3>Engineering Calculators</h3>
+        <p>
+          Run common field calculations quickly with a clean, mobile-friendly workflow designed for real operational use.
+        </p>
+      </article>
+      <article>
+        <h3>Proppant &amp; Casing Libraries</h3>
+        <p>
+          Access key reference data directly on device without relying on a network connection.
+        </p>
+      </article>
+      <article>
+        <h3>Tank Strapping Tables</h3>
+        <p>
+          View stored data tables locally for rapid lookup while working in the field.
+        </p>
+      </article>
+      <article>
+        <h3>Offline by Design</h3>
+        <p>
+          No login, no required internet connection, and no cloud dependency for core functionality.
+        </p>
+      </article>
+    </section>
+
+    <h2>App Overview</h2>
+    <section class="info-list" aria-label="App Overview">
+      <div class="row">
+        <div class="label">Internet Connection</div>
+        <div class="value">Not Required</div>
+      </div>
+      <div class="row">
+        <div class="label">Account Required</div>
+        <div class="value">No</div>
+      </div>
+      <div class="row">
+        <div class="label">Data Collection</div>
+        <div class="value">None</div>
+      </div>
+      <div class="row">
+        <div class="label">Tracking</div>
+        <div class="value">None</div>
+      </div>
+    </section>
+
+    <h2>Built for Practical Use</h2>
+    <section class="info-card card">
+      <h3>Simple, dependable, and local-first</h3>
+      <p>
+        FracAppz is focused on utility. Reference data and preferences are stored locally on the device, helping keep the app responsive and available wherever work takes you.
+      </p>
+    </section>
+
+    <h2>Contact</h2>
+    <section class="cta-card">
+      <p>
+        Need help, want to report an issue, or have a feature suggestion?
+      </p>
+      <p>
+        Contact the developer at
+        <a href="mailto:youremail@example.com">omar.omar@aspelta.io</a>.
+      </p>
+    </section>
+
+    <p class="footer">
+      FracAppz • Developed by Omar A Omar • Houston, Texas
+    </p>
+  </main>
+</body>
+</html>
